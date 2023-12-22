@@ -4,10 +4,10 @@ import 'package:flutter_examen1/models/departement.dart';
 
 class CommunePage extends StatelessWidget {
   const CommunePage({
-    Key? key,
+    super.key,
     required this.regionCode,
     required this.selectedCommune,
-  }) : super(key: key);
+  });
 
   final String regionCode;
   final Departement selectedCommune;
@@ -32,5 +32,3 @@ class CommunePage extends StatelessWidget {
     );
   }
 }
-
-
